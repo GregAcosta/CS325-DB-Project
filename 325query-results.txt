@@ -1,0 +1,67 @@
+When does a customers subscription end?
+Enter value for id: USR002
+old   3: where user_id = '&id'
+new   3: where user_id = 'USR002'
+
+USER_ID DATE                                                                    
+------- ---------                                                               
+USR002  15-MAY-24                                                               
+
+What quantity do we have of SNES games?
+
+PRODUCT_NAME                                       NUM                          
+-------------------------------------------------- ---                          
+Contra III: The Alien Wars                         15                           
+Donkey Kong Country                                20                           
+The Legend of Zelda: Link to the Past              30                           
+Final Fantasy VII                                  40                           
+Super Metroid                                      80                           
+
+What game do we have the most copies of?
+
+PRODUCT_NAME                                       NUM                          
+-------------------------------------------------- ---                          
+Castlevania: Symphony of the Night                 90                           
+
+What is a customers order history?
+Enter value for id: USR001
+old   4: where c.user_id = '&id'
+new   4: where c.user_id = 'USR001'
+
+ID      ORDER_DAT STATUS                                                        
+------- --------- ---------------                                               
+ORD001  01-DEC-23 Processing                                                    
+
+What kind of consoles do you sell?
+
+PRODUCT_NAME                                                                    
+--------------------------------------------------                              
+Nintendo Entertainment System (NES)                                             
+Super Nintendo Entertainment System (SNES)                                      
+Sega Genesis                                                                    
+Nintendo 64                                                                     
+PlayStation                                                                     
+
+What is your oldest console?
+
+PRODUCT_NAME                                       RELEASE D                    
+-------------------------------------------------- ---------                    
+Nintendo Entertainment System (NES)                17-AUG-85                    
+
+Do you have Pokémon Red?
+
+PRODUCT_NAME                                                                    
+--------------------------------------------------                              
+Pokemon Red Version                                                             
+
+Are any customer's subscriptions expiring this month?
+Enter value for month: MAY
+old   4: where s.expir_date like '%-&month-%'
+new   4: where s.expir_date like '%-MAY-%'
+
+USER_ID L_NAME                    F_NAME                    EXPIR_DAT           
+------- ------------------------- ------------------------- ---------           
+USR002  Smith                     Jane                      15-MAY-24           
+USR008  Thompson                  Barbara                   04-MAY-24           
+
+SQL> 

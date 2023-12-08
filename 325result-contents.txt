@@ -1,0 +1,212 @@
+Showing User_info Table
+***********************
+rows will be truncated
+
+rows will be truncated
+
+rows will be truncated
+
+
+USER_ID F_NAME                                             L_NAME                                             PASSW                     EMAIL         
+------- -------------------------------------------------- -------------------------------------------------- ------------------------- --------------
+USR001  John                                               Doe                                                password123               johndoe@exampl
+USR002  Jane                                               Smith                                              password456               janesmith@exam
+USR003  Peter                                              Jones                                              password789               peterjones@exa
+USR004  Mary                                               Brown                                              password1011              marybrown@exam
+USR005  David                                              Williams                                           password1213              davidwilliams@
+USR006  Elizabeth                                          Miller                                             password1415              elizabethmille
+USR007  James                                              Anderson                                           password1617              jamesanderson@
+USR008  Barbara                                            Thompson                                           password1819              barbarathompso
+USR009  Michael                                            Taylor                                             password2021              michaeltaylor@
+USR010  Susan                                              Martinez                                           password2223              susanmartinez@
+
+10 rows selected.
+
+Showing Customer Table
+***********************
+
+USER_ID                                                                                                                                               
+-------                                                                                                                                               
+USR002                                                                                                                                                
+USR003                                                                                                                                                
+USR004                                                                                                                                                
+USR005                                                                                                                                                
+USR006                                                                                                                                                
+USR007                                                                                                                                                
+USR008                                                                                                                                                
+USR009                                                                                                                                                
+USR010                                                                                                                                                
+
+9 rows selected.
+
+Showing Admin Table
+***********************
+
+USER_ID                                                                                                                                               
+-------                                                                                                                                               
+USR001                                                                                                                                                
+USR006                                                                                                                                                
+
+Showing Subscription Table
+***********************
+
+SUB_ID  USER_ID S START_DAT EXPIR_DAT SUB_STATUS PAY_ID          PAYMENT_STATUS                                                                       
+------- ------- - --------- --------- ---------- --------------- ---------------                                                                      
+SUB001  USR001  M 01-DEC-23 01-JUN-24 Active     PAY001          Processed                                                                            
+SUB002  USR002  M 15-NOV-23 15-MAY-24 Active     PAY002          Processed                                                                            
+SUB003  USR003  Q 04-DEC-23 04-JAN-24 Active     PAY003          Processed                                                                            
+SUB004  USR004  M 22-SEP-23 22-MAR-24 Active     PAY004          Processed                                                                            
+SUB005  USR005  Y 10-AUG-23 10-AUG-24 Active     PAY005          Processed                                                                            
+SUB006  USR006  Q 28-JUL-23 28-APR-24 Active     PAY006          Processed                                                                            
+SUB007  USR007  M 16-JUN-23 16-FEB-24 Active     PAY007          Processed                                                                            
+SUB008  USR008  Y 04-MAY-23 04-MAY-24 Active     PAY008          Processed                                                                            
+SUB009  USR009  Q 20-APR-23 20-JAN-24 Active     PAY009          Processed                                                                            
+SUB010  USR010  M 08-MAR-23 08-SEP-24 Active     PAY010          Processed                                                                            
+
+10 rows selected.
+
+Showing Shipping Address Table
+***********************
+
+SHIPPING BLDG_NUMBER    APT_NUM STREET               CITY                 STATE                  ZIP_CODE USER_ID                                     
+-------- ----------- ---------- -------------------- -------------------- -------------------- ---------- -------                                     
+SADD001          123        456 Main Street          Arcata               California                95521 USR001                                      
+SADD002          456        789 Elm Street           Arcata               California                95521 USR002                                      
+SADD003          789       1011 Oak Street           Arcata               California                95521 USR003                                      
+SADD004         1011       1213 Pine Street          Arcata               California                95521 USR004                                      
+SADD005         1213       1415 Birch Street         Arcata               California                95521 USR005                                      
+SADD006         1415       1617 Maple Street         Arcata               California                95521 USR006                                      
+SADD007         1617       1819 Spruce Street        Arcata               California                95521 USR007                                      
+SADD008         1819       2021 Willow Street        Arcata               California                95521 USR008                                      
+SADD009         2021       2223 Cedar Street         Arcata               California                95521 USR009                                      
+SADD010         2223       2425 Walnut Street        Arcata               California                95521 USR010                                      
+
+10 rows selected.
+
+Showing Billing_Address Table
+***********************
+
+BILLING_ BLDG_NUMBER    APT_NUM STREET               CITY                 STATE                  ZIP_CODE USER_ID                                     
+-------- ----------- ---------- -------------------- -------------------- -------------------- ---------- -------                                     
+BADD011          321        654 Main Street          Arcata               California                95521 USR001                                      
+BADD012          654        987 Elm Street           Arcata               California                95521 USR002                                      
+BADD013          987       1112 Oak Street           Arcata               California                95521 USR003                                      
+BADD014         1112       1314 Pine Street          Arcata               California                95521 USR004                                      
+BADD015         1314       1516 Birch Street         Arcata               California                95521 USR005                                      
+BADD016         1516       1718 Maple Street         Arcata               California                95521 USR006                                      
+BADD017         1718       1920 Spruce Street        Arcata               California                95521 USR007                                      
+BADD018         1920       2122 Willow Street        Arcata               California                95521 USR008                                      
+BADD019         2122       2324 Cedar Street         Arcata               California                95521 USR009                                      
+BADD020         2324       2526 Walnut Street        Arcata               California                95521 USR010                                      
+
+10 rows selected.
+
+Showing Subscription Order Table
+***********************
+
+SUB_ORD SUB_ID  SUB_ORDER SUB_ORDER_STATU SUB_ORDER_TOTAL SHIPPING BILLING_ SHIPPING_METHOD      SHIPPING_COST TRACKING_N                             
+------- ------- --------- --------------- --------------- -------- -------- -------------------- ------------- ----------                             
+SOR001  SUB001  29-NOV-23 Shipped                      60 SADD001  BADD011  Standard Shipping                6 TRACK001                               
+SOR002  SUB002  18-NOV-23 Processing                   60 SADD002  BADD012  Expedited Shipping              11 TRACK002                               
+SOR003  SUB003  25-OCT-23 Completed                    50 SADD003  BADD013  Standard Shipping                6 TRACK003                               
+SOR004  SUB004  13-SEP-23 Pending                      60 SADD004  BADD014  Expedited Shipping              11 TRACK004                               
+SOR005  SUB005  04-AUG-23 Shipped                      70 SADD005  BADD015  Standard Shipping                6 TRACK005                               
+SOR006  SUB006  21-JUL-23 Processing                   50 SADD006  BADD016  Expedited Shipping              11 TRACK006                               
+SOR007  SUB007  09-JUN-23 Completed                    50 SADD007  BADD017  Standard Shipping                6 TRACK007                               
+SOR008  SUB008  28-MAY-23 Pending                      70 SADD008  BADD018  Expedited Shipping              11 TRACK008                               
+SOR009  SUB009  16-APR-23 Shipped                      50 SADD009  BADD019  Standard Shipping                6 TRACK009                               
+SOR010  SUB010  04-MAR-23 Processing                   60 SADD010  BADD020  Expedited Shipping              11 TRACK010                               
+
+10 rows selected.
+
+Showing Shipment Table
+***********************
+
+SHIPMEN ORDER_I SUB_ORD SHIPPING_ SHIPPING_METHOD      TRACKING_N SHIPMENT_S SHIPPING_C EST_DELIV DELIVERY_                                           
+------- ------- ------- --------- -------------------- ---------- ---------- ---------- --------- ---------                                           
+SHIP001 ORD001  SOR001  01-DEC-23 Standard Shipping    TRACK001   Shipped    UPS        05-DEC-23 07-DEC-23                                           
+SHIP002 ORD002  SOR002  29-NOV-23 Expedited Shipping   TRACK002   Shipped    FedEx      30-NOV-23 02-DEC-23                                           
+SHIP003 ORD003  SOR003  25-OCT-23 Standard Shipping    TRACK003   Completed  USPS       29-OCT-23 31-OCT-23                                           
+SHIP004 ORD004  SOR004  20-SEP-23 Expedited Shipping   TRACK004   Pending    DHL        21-SEP-23 25-SEP-23                                           
+SHIP005 ORD005  SOR005  04-AUG-23 Standard Shipping    TRACK005   Shipped    UPS        08-AUG-23 10-AUG-23                                           
+SHIP006 ORD006  SOR006  21-JUL-23 Expedited Shipping   TRACK006   Completed  FedEx      22-JUL-23 24-JUL-23                                           
+SHIP007 ORD007  SOR007  09-JUN-23 Standard Shipping    TRACK007   Pending    USPS       10-JUN-23 14-JUN-23                                           
+SHIP008 ORD008  SOR008  04-MAY-23 Expedited Shipping   TRACK008   Shipped    DHL        05-MAY-23 09-MAY-23                                           
+SHIP009 ORD009  SOR009  16-APR-23 Standard Shipping    TRACK009   Completed  UPS        20-APR-23 22-APR-23                                           
+SHIP010 ORD010  SOR010  04-MAR-23 Expedited Shipping   TRACK010   Pending    FedEx      05-MAR-23 09-MAR-23                                           
+
+10 rows selected.
+
+Showing Order Table
+***********************
+
+ORDER_I USER_ID ORDER_DAT ORDER_STATUS    SHIPPING BILLING_ SHIPPING_METHOD      ORDER_TOTAL PAYMENT_METHOD            PAYMENT_STATUS                 
+------- ------- --------- --------------- -------- -------- -------------------- ----------- ------------------------- ---------------                
+ORD001  USR001  01-DEC-23 Processing      SADD001  BADD011  Standard Shipping             40 Visa                      Approved                       
+ORD002  USR002  24-NOV-23 Shipped         SADD002  BADD012  Expedited Shipping            70 Mastercard                Processed                      
+ORD003  USR003  12-OCT-23 Completed       SADD003  BADD013  Standard Shipping             60 PayPal                    Completed                      
+ORD004  USR004  01-SEP-23 Pending         SADD004  BADD014  Expedited Shipping            80 American Express          Pending                        
+ORD005  USR005  30-JUL-23 Shipped         SADD005  BADD015  Standard Shipping             50 Discover                  Processed                      
+ORD006  USR006  18-JUN-23 Completed       SADD006  BADD016  Expedited Shipping            60 JCB                       Completed                      
+ORD007  USR007  07-MAY-23 Processing      SADD007  BADD017  Standard Shipping             40 Diners Club               Pending                        
+ORD008  USR008  25-APR-23 Completed       SADD008  BADD018  Expedited Shipping            50 UnionPay                  Completed                      
+ORD009  USR009  13-MAR-23 Pending         SADD009  BADD019  Standard Shipping             50 Solo                      Pending                        
+ORD010  USR010  02-FEB-23 Shipped         SADD010  BADD020  Expedited Shipping            60 Carte Blanche             Processed                      
+
+10 rows selected.
+
+Showing Line Item Table
+***********************
+
+LINE_IT ORDER_I PRODUCT   QUANTITY UNIT_PRICE TOTAL_PRICE  DISCOUNTS        TAX SHIPPING_COSTS                                                        
+------- ------- ------- ---------- ---------- ----------- ---------- ---------- --------------                                                        
+LIN001  ORD001  PRD001           1         40          40          0          3              0                                                        
+LIN002  ORD002  PRD003           1         40          40          0          3              0                                                        
+LIN003  ORD003  PRD005           1         60          60          0          5              0                                                        
+LIN004  ORD004  PRD007           2         40          80          0          6              0                                                        
+LIN005  ORD005  PRD009           3         40         120          0         10              0                                                        
+LIN006  ORD006  PRD010           1         50          50          0          4              0                                                        
+LIN007  ORD007  PRD004           2         40          80          0          6              0                                                        
+LIN008  ORD008  PRD006           1         40          40          0          3              0                                                        
+LIN009  ORD009  PRD008           1         60          60          0          5              0                                                        
+LIN010  ORD010  PRD002           2         40          80          0          6              0                                                        
+
+10 rows selected.
+
+Showing Catalog Table
+***********************
+rows will be truncated
+
+rows will be truncated
+
+rows will be truncated
+
+rows will be truncated
+
+rows will be truncated
+
+rows will be truncated
+
+rows will be truncated
+
+
+PRODUCT PRODUCT_NAME                                       PRODUCT_DESCR                                                                              
+------- -------------------------------------------------- -------------------------------------------------------------------------------------------
+PRD001  Super Mario Bros.                                  Jump and stomp your way through the Mushroom Kingdom in this classic platformer!           
+PRD002  The Legend of Zelda                                Explore the land of Hyrule and battle evil forces in this timeless adventure game!         
+PRD003  Mega Man X                                         Battle your way through challenging levels and defeat bosses in this action-packed platform
+PRD004  Final Fantasy VII                                  Embark on an epic journey with Cloud Strife and his friends in this classic RPG!           
+PRD005  Sonic the Hedgehog 2                               Run, jump, and spin through stages as Sonic the Hedgehog in this fast-paced platformer!    
+PRD006  The Legend of Zelda: Link to the Past              Travel through time and save Hyrule in this epic prequel to The Legend of Zelda!           
+PRD007  Super Metroid                                      Explore the alien world of Zebes and battle hostile creatures in this Metroidvania game!   
+PRD008  Donkey Kong Country                                Swing and jump through stages as Diddy Kong and Donkey Kong to rescue Donkey Kong from King
+PRD009  Contra III: The Alien Wars                         Run and gun your way through hordes of enemies in this classic action game!                
+PRD010  Castlevania: Symphony of the Night                 Explore a gothic castle and defeat Dracula in this Metroidvania game with RPG elements!    
+CNS001  Nintendo Entertainment System (NES)                The classic home console that introduced the world to iconic games like Super Mario Bros. a
+
+PRODUCT PRODUCT_NAME                                       PRODUCT_DESCR                                                                              
+------- -------------------------------------------------- -------------------------------------------------------------------------------------------
+CNS002  Super Nintendo Entertainment System (SNES)         The successor to the NES, the SNES brought 16-bit graphics and sound to home gaming with cl
+CNS003  Sega Genesis                                       The Sega Genesis rivaled the SNES in the 16-bit era, offering a unique gaming experience wi
+CNS004  Nintendo 64                                        The first home console with 3D graphics, the Nintendo 64 brought new experiences to gaming 
+CNS005  PlayStation         

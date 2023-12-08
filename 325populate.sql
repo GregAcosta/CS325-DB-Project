@@ -2,7 +2,7 @@
 -- Greg Acosta, Justin Crittenden, Emad Syed, Locke Topping, Evan Blem, Miguel Lopez
 
 -- CS 325 - Fall 2023
--- Last Modified: 12/1/2023
+-- Last Modified: 12/4/2023
 
 
 -- Deleting from customer/admin/user_info
@@ -247,7 +247,7 @@ INSERT INTO catalog
 VALUES ('PRD003', 'Mega Man X', 'Battle your way through challenging levels and defeat bosses in this action-packed platformer!', 'Platformer', 'New', '31-JAN-1993', 39.99, '50', 'Capcom', 'Super Nintendo Entertainment System (SNES)');
 
 INSERT INTO catalog
-VALUES ('PRD004', 'Final Fantasy VII', 'Embark on an epic journey with Cloud Strife and his friends in this classic RPG!', 'Role-Playing', 'New', '31-JAN-1997', 49.99, '40', 'Square Enix', 'SNES');
+VALUES ('PRD004', 'Final Fantasy VII', 'Embark on an epic journey with Cloud Strife and his friends in this classic RPG!', 'Role-Playing', 'New', '31-JAN-1997', 49.99, '40', 'Square Enix', 'Playstation');
 
 INSERT INTO catalog
 VALUES ('PRD005', 'Sonic the Hedgehog 2', 'Run, jump, and spin through stages as Sonic the Hedgehog in this fast-paced platformer!', 'Platformer', 'New', '24-NOV-1992', 39.99, '60', 'Sega', 'Sega Genesis');
@@ -266,6 +266,31 @@ VALUES ('PRD009', 'Contra III: The Alien Wars', 'Run and gun your way through ho
 
 INSERT INTO catalog
 VALUES ('PRD010', 'Castlevania: Symphony of the Night', 'Explore a gothic castle and defeat Dracula in this Metroidvania game with RPG elements!', 'Action-Adventure', 'New', '24-OCT-1997', 49.99, '90', 'Konami', 'PlayStation');
+
+-- Pokemon Red Version
+INSERT INTO Catalog
+VALUES ('PRD011', 'Pokemon Red Version', 'Catch and train Pokemon in the Kanto region!', 'Game', 'Used - Good', '28-SEP-1998', 39.99, '10', 'Nintendo', 'Game Boy');
+
+-- Pokemon Blue Version
+INSERT INTO Catalog
+VALUES ('PRD012', 'Pokemon Blue Version', 'Embark on your Pokemon adventure in Kanto!', 'Game', 'Used - Good', '28-SEP-1998', 39.99, '8', 'Nintendo', 'Game Boy');
+
+-- Pokemon Yellow Version
+INSERT INTO Catalog
+VALUES ('PRD013', 'Pokemon Yellow Version', 'Pikachu joins you as your partner!', 'Game', 'Used - Good', '10-SEP-1999', 44.99, '5', 'Nintendo', 'Game Boy');
+
+-- Pokemon Gold Version
+INSERT INTO Catalog
+VALUES ('PRD014', 'Pokemon Gold Version', 'Explore the Johto region with your loyal Cyndaquil!', 'Game', 'New', '21-NOV-1999', 49.99, '20', 'Nintendo', 'Game Boy Color');
+
+-- Pokemon Silver Version
+INSERT INTO Catalog
+VALUES ('PRD015', 'Pokemon Silver Version', 'Travel through Johto with your courageous Totodile!', 'Game', 'New', '21-NOV-1999', 49.99, '15', 'Nintendo', 'Game Boy Color');
+
+-- Pokemon Crystal Version
+INSERT INTO Catalog
+VALUES ('PRD016', 'Pokemon Crystal Version', 'Uncover the mysteries of Johto with your energetic Chikorita!', 'Game', 'New', '27-FEB-2000', 49.99, '12', 'Nintendo', 'Game Boy Color');
+
 
 INSERT INTO catalog (product_id, product_name, product_descr, product_category, product_condition, release_date, price, stock, manufacturer)
 VALUES ('CNS001', 'Nintendo Entertainment System (NES)', 'The classic home console that introduced the world to iconic games like Super Mario Bros. and The Legend of Zelda!', 'Console', 'New', '17-AUG-1985', 149.99, '25', 'Nintendo');

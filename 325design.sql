@@ -1,14 +1,14 @@
 -- Group Name: Databoiz
--- Group Members: Justin Crittenden, Greg Acosta, Evan Blem, Locke Topping, Emad Syed, Miguel Lopez
+-- Group Members: Justin Crittenden, Greg Acosta, Evan Blem, Locke Topping, Emad Syed
 -- CS_325 - Fall 2023
--- Last Modified: December 1, 2023
+-- Last Modified: December 8, 2023
 
 -- User Table			
 drop table user_info cascade constraints;
 create table user_info
 (user_id	    char(7),
- f_Name		    varchar2(50),
- l_Name		    varchar2(50),
+ f_name		    varchar2(25),
+ l_name		    varchar2(25),
  passw		    varchar2(25),
  email		    varchar2(50),
  phone_num	    char(10),
@@ -39,11 +39,11 @@ create table subscription
 (sub_id		    char(7),
  user_id	    char(7),
  sub_plan	    char(1),
- start_Date	    date,
- expir_Date	    date,
+ start_date	    date,
+ expir_date	    date,
  sub_status	    varchar2(10),
  pay_id         varchar2(15),
- payment_Status varchar2(15),
+ payment_status varchar2(15),
  primary key	(sub_id),
  foreign key	(user_id) references user_info
 );
