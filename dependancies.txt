@@ -1,3 +1,5 @@
+This file are the dependencies for the backend, the backend ran in a python virtual enviroment. Using pip3, these were the packages that I had installed in that enviroment
+
 Package             Version
 ------------------- ------------
 asgiref             3.7.2
